@@ -1,0 +1,10 @@
+.about-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.about-description p{
+    margin: 15px 0;
+    line-height: 30px;
+}

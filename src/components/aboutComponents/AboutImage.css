@@ -1,0 +1,14 @@
+.about-image_container .about-image{
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.about-image_container .about-image img{
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,26 @@
+.hero-description{
+}
+.hero-heading{
+    color: var(--text-white);
+    font-size: 35px;
+}
+.hero-description .hero-desc{
+    color: var(--text-faint-white);
+    margin: 20px 0;
+}
+.hero-description .hero-buttons{
+    display: flex;
+    column-gap: 15px;
+}
+.hero-description .hero-credits{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.hero-description .hero-credits .hero-credits_column h3{
+    color: var(--text-white);
+    font-size: 25px;
+}
+.hero-description .hero-credits .hero-credits_column span{
+    color: var(--text-faint-white);
+}

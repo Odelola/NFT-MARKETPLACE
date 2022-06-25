@@ -1,0 +1,78 @@
+.primaryButton,
+.secondaryButton,
+.secondaryButtonAlt,
+.primaryButtonAltSlim{
+    display: inline-block;
+    color:  var(--text-white);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
+.primaryButton,
+.secondaryButton,
+.secondaryButtonAlt{
+    padding:  10px 20px;
+}
+.primaryButton,
+.primaryButtonAltSlim{
+    background: var(--primary-gradient);
+}
+.primaryButton:hover,
+.primaryButtonAltSlim:hover {
+    background: var(--primary-gradient);
+}
+.secondaryButton{
+    background: var(--btn-secondary-color);
+}
+.secondaryButtonAlt{
+    background: var(--text-faint-white);
+}
+.primaryButtonAltSlim{
+    padding: 5px 15px;
+}
+.primaryButtonOutline{
+    display: inline-block;
+    padding:  10px 20px;
+    /*-webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    *//*border-image: 1px solid var(--primary-gradient);
+    */background: var(--primary-gradient);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    /*border-image-slice: 1;
+    border-width: 5px;
+    *//*background: var(--primary-gradient);
+    */position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+.primaryButtonOutline::before{
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    background-color: var(--text-faint-white) !important;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    z-index: -1;
+}
+.primaryButtonOutline::after{
+    content: attr(data);
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    color: transparent;
+    /* z-index: -1; */
+}

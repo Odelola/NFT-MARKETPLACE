@@ -1,0 +1,25 @@
+#hero{
+    margin-top: 60px;
+}
+#hero .hero-inner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#hero .hero-inner > *{
+    flex-basis: 40%;
+}
+#hero .hero-inner .hero-images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: minmax(130, 250); */
+    grid-auto-flow: dense;
+    grid-gap: 15px;
+}
+/* MEDIA QUERIES STARTS */
+@media screen  and (min-width: 320px) and (max-width: 480px){
+    #hero .hero-inner{
+        flex-direction: column-reverse;
+    }
+}
+/* MEDIA QUERIES ENDS */

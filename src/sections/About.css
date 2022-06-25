@@ -1,0 +1,19 @@
+#about .about-inner .about-row{
+    display: flex;
+    justify-content: space-around;
+}
+#about .about-inner .about-row .about-image_container{
+    flex-basis: 35%;
+}
+#about .about-inner .about-row .about-description{
+    flex-basis: 40%;
+}
+/* MEDIA QUERIES STARTS */
+@media screen  and (min-width: 320px) and (max-width: 480px){
+    #about .about-inner .about-row{
+        flex-direction: column-reverse;
+        align-items: center;
+        row-gap: 30px;
+    }
+}
+/* MEDIA QUERIES ENDS */

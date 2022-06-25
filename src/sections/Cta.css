@@ -1,0 +1,25 @@
+#cta .cta-inner{
+    background: var(--primary-gradient);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 35px 0;
+}
+#cta .cta-inner .cta-details{
+    text-align: center;
+}
+#cta .cta-inner .cta-details h2{
+    font-size: 32px;
+    margin-bottom: 15px;
+    line-height: 45px;
+}
+/* MEDIA QUERIES STARTS */
+@media screen  and (min-width: 320px) and (max-width: 480px){
+    #cta .cta-inner .cta-details h2{
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+/* MEDIA QUERIES ENDS */

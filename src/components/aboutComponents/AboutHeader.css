@@ -1,0 +1,17 @@
+.about-header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.about-header h3{
+    font-size: 25px;
+}
+.about-header p{
+    color: var(--text-faint-white);
+}
+/* MEDIA QUERIES STARTS */
+@media screen  and (min-width: 320px) and (max-width: 480px){
+    .about-header br{
+       display: none;
+   }
+}
+/* MEDIA QUERIES ENDS */

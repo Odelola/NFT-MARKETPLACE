@@ -1,0 +1,100 @@
+.card{
+    flex-basis: 31%;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.card-dark{
+    background: var(--btn-secondary-color);
+}
+.card-dark-gray{
+    background: var(--text-faint-white);
+}
+.card .card-inner{
+    width: 90%;
+    margin: 20px auto;
+}
+.card .card-inner .card-image {
+    margin-bottom: 5px;
+}
+.card .card-inner .card-image img{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.card .card-inner .card-details{
+    display: flex;
+    justify-content: space-between;
+}
+.card .card-inner .card-details span{
+    color: var(--text-faint-white);
+}
+.card .card-inner .card-details .card-user h4{
+   margin-top: 10px;
+}
+.card .card-inner .card-button{
+   margin-top: 10px;
+}
+.card .card-inner .card-button button{
+   width:  100%;
+}
+/* SECONDARY CARD */
+.card-secondary{
+    flex-basis: 31%;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;  
+}
+.card-secondary .card-secondary-inner{
+    margin: 0 auto 20px;
+}
+.card-secondary .card-secondary-inner .card-secondary-image{
+    position: relative;
+    margin-bottom: 60px;
+}
+.card-secondary .card-secondary-inner .card-secondary-image img{
+    width: 100%;
+}
+.card-secondary .card-secondary-inner .card-secondary-image .card-secondary-profile{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+}
+.card-secondary .card-secondary-inner .card-secondary-image .card-secondary-profile img{
+    width: 100%;
+    height: 100%;
+}
+.card-secondary .card-secondary-inner .card-secondary-details{
+    width: 90%;
+    margin: 0 auto;
+}
+.card-secondary .card-secondary-inner .card-secondary-details h4,
+.card-secondary .card-secondary-inner  .card-secondary-details p{
+    text-align: center;
+}
+.card-secondary .card-secondary-inner .card-secondary-details h4{
+    font-size: 20px;
+}
+.card-secondary .card-secondary-inner .card-secondary-details .card-secondary-button{
+   margin-top: 10px;
+}
+.card-secondary .card-secondary-inner  .card-secondary-details .card-secondary-button button{
+    width: 100%;
+}

@@ -1,0 +1,11 @@
+/* MEDIA QUERIES STARTS */
+@media screen  and (min-width: 320px) and (max-width: 480px){
+     .featured-header br{
+        display: none;
+    }
+}
+/* MEDIA QUERIES ENDS */
+
+STYLE SCROLLBAR
+Test the buttons
+Fix the gird

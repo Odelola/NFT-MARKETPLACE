@@ -1,0 +1,9 @@
+.collection-filters{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.collection-filters > *{
+    flex-basis: 23%;
+}
