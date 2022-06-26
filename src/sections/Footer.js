@@ -35,7 +35,7 @@ const Footer = () => {
             <div className="footer-links">
               <a href="tel:; +012 3456789"  className="footer-link">+012 3456789</a>
               <a href="mailto:adorableprogrammer@gmail.com" className="footer-link">adorableprogrrammer@gmail.com</a>
-              <a href="#0" className="footer-link">Terrm & Condition</a>
+              <a href="#0" className="footer-link">Term & Condition</a>
               <a href="#0" className="footer-link">FAQ</a>
             </div>
           </div>
