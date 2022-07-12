@@ -9,4 +9,10 @@
         row-gap: 20px;
     }
 }
+@media screen  and (min-width: 500px) and (max-width: 768px){
+    #creator .creator-inner .creator-cards .creator-cards_column{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
 /* MEDIA QUERIES ENDS */

@@ -98,3 +98,16 @@
 .card-secondary .card-secondary-inner  .card-secondary-details .card-secondary-button button{
     width: 100%;
 }
+/* MEDIA QUERIES STARTS */
+@media screen  and (min-width: 500px) and (max-width: 768px){
+    .card{
+        /* flex-basis: 28%; */
+    }
+    .card .card-inner{
+        height: auto;
+    }
+    .card .card-inner .card-image img{
+        /* height: 300px; */
+    }
+}
+/* MEDIA QUERIES ENDS */

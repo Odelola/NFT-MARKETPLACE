@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import {AnimatePresence, motion} from 'framer-motion/dist/framer-motion'
 import CollectionHeader from '../components/collectionComponents/CollectionHeader'
 import CollectionFilters from '../components/collectionComponents/CollectionFilters'
 import {Card } from '../components/uiComponents/card'
@@ -24,6 +25,7 @@ const collectionData = [
         "price": "0.005ETH",
         "buttonText": "Place a bid",
         "defaultTheme": true,
+        "type": "photography",
       },
     {
         "id": 2,
@@ -35,6 +37,7 @@ const collectionData = [
         "price": "0.007ETH",
         "buttonText": "Place a bid",
         "defaultTheme": true,
+        "type": "art",
       },
     {
         "id": 3,
@@ -46,6 +49,7 @@ const collectionData = [
         "price": "0.008ETH",
         "buttonText": "Place a bid",
         "defaultTheme": true,
+        "type": "pattern",
       },
     {
         "id": 4,
@@ -57,6 +61,7 @@ const collectionData = [
         "price": "0.007ETH",
         "buttonText": "Place a bid",
         "defaultTheme": true,
+        "type": "pattern",
       },
       {
         "id": 5,
@@ -68,6 +73,7 @@ const collectionData = [
         "price": "0.009ETH",
         "buttonText": "Place a bid",
         "defaultTheme": false,
+        "type": "art",
       },
       {
         "id": 6,
@@ -79,6 +85,7 @@ const collectionData = [
         "price": "0.008ETH",
         "buttonText": "Place a bid",
         "defaultTheme": true,
+        "type": "photography",
       },
       {
         "id": 7,
@@ -90,6 +97,7 @@ const collectionData = [
         "price": "0.004ETH",
         "buttonText": "Place a bid",
         "defaultTheme": true,
+        "type": "art",
       },
       {
         "id": 8,
@@ -101,6 +109,7 @@ const collectionData = [
         "price": "0.006ETH",
         "buttonText": "Place a bid",
         "defaultTheme": true,
+        "type": "photography",
       },
       {
         "id": 9,
@@ -112,22 +121,28 @@ const collectionData = [
         "price": "0.008ETH",
         "buttonText": "Place a bid",
         "defaultTheme": true,
+        "type": "pattern",
       },
 ]
 const Collection = () => {
+    const [initial, setInitial] = useState(collectionData)
+    const [filtered, setFiltered] = useState(collectionData)
+    const [type, setType] = useState("")
     return(
         <section id="collection">
         <div className="collection-inner">
             <CollectionHeader />
-            <CollectionFilters />
+            <CollectionFilters initial={initial} setFiltered={setFiltered} type={type} setType={setType} />
             <div className="collection-cards">
-                <div className="collection-cards_column">
-                    {collectionData.map(({id, src, alt, user, name, bidStatus, price, buttonText, defaultTheme}) => {
+                <motion.div layout className="collection-cards_column">
+                  <AnimatePresence>
+                      {filtered.map(({id, src, alt, user, name, bidStatus, price, buttonText, defaultTheme}) => {
                         return (
-                            <Card key={id} src={src} alt={alt} user={user} name={name} bidStatus={bidStatus} price={price} buttonText={buttonText} defaultTheme={defaultTheme}/>
-                        )
-                    })}
-                </div>
+                                <Card key={id} src={src} alt={alt} user={user} name={name} bidStatus={bidStatus} price={price} buttonText={buttonText} defaultTheme={defaultTheme}/>
+                            )
+                      })}
+                        </AnimatePresence>
+                </motion.div>
             </div>
         </div>
     </section>

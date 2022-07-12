@@ -28,6 +28,7 @@ p{
     --linear-background:  linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%);
     --text-white:  hsla(0, 0%, 100%, 1);
     --text-faint-white:  hsla(0, 0%, 100%, 0.5);
+    --text-faint-gray:  hsla(0, 0%, 100%, 0.1);
     --bg-gray: #E5E5E5;
     --primary-gradient:  linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
     --btn-secondary-color:  rgba(255, 255, 255, 0.1);
@@ -66,7 +67,7 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 100px;
 }
 /* MEDIA QUERIES STARTS */
-@media screen  and (min-width: 320px) and (max-width: 480px){
+@media screen  and (min-width: 320px) and (max-width: 768px){
     .App{
         padding: 1em;
         position: relative;

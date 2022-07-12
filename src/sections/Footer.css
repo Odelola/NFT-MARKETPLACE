@@ -67,4 +67,17 @@
         text-align: left;
     }
 }
+@media screen  and (min-width: 500px) and (max-width: 768px){
+    #footer{
+        margin-bottom: 25px;
+    }
+    #footer .footer-inner .footer-row{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    #footer .footer-inner .footer-row > *{
+        flex-basis: 40%;
+    }
+}
 /* MEDIA QUERIES ENDS */

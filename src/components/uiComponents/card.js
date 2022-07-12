@@ -1,10 +1,11 @@
 import React from 'react';
+import {AnimatePresence, motion} from 'framer-motion/dist/framer-motion'
 import { PrimaryButton, PrimaryButtonOutline } from './buttons';
 import './card.css'
 
 export const Card = ({src, alt, user, name, bidStatus, price, buttonText, defaultTheme}) => {
     return(
-        <div className={`card ${defaultTheme ? "card-dark" : "card-dark-gray"}`}>
+        <motion.div animate={{ opacity: 1, scale: 1}} initial={{ opacity: 0, scale: 0}} exit={{ opacity: 0, scale: 0}} layout className={`card ${defaultTheme ? "card-dark" : "card-dark-gray"}`}>
             <div className="card-inner">
                 <div className="card-image">
                 <img src={src} alt={alt} />
@@ -23,7 +24,7 @@ export const Card = ({src, alt, user, name, bidStatus, price, buttonText, defaul
                     {defaultTheme ? (<PrimaryButton title={buttonText} />): (<PrimaryButtonOutline title={buttonText} />)}
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

@@ -7,3 +7,18 @@
 .collection-filters > *{
     flex-basis: 23%;
 }
+.collection-filters button{
+    display: inline-block;
+    padding: 5px 10px;
+    color:  var(--text-white);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+    background: var(--text-faint-gray);
+}
+.collection-filters button.active{
+    background: var(--primary-gradient);
+}

@@ -9,9 +9,18 @@ import './Navbar.css'
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false)
+  const forcedScroll = () => {
+    window.scrollTo(0, 0)
+  }
   const toggleActive = () => {
     setIsActive(!isActive);
-  }
+    // if(!isActive){
+    //   window.addEventListener('scroll', forcedScroll)
+    // }
+    // if(isActive){
+    //     window.removeEventListener('scroll', forcedScroll)
+    //   }
+    }
   return (
     <nav>
         <div className="nav-inner">
