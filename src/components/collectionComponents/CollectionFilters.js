@@ -3,7 +3,7 @@ import './CollectionFilters.css'
 
 const CollectionFilters = ({ initial, setFiltered, type, setType }) => {
 useEffect(() => {
-  if(type == ""){
+  if(type === ""){
     setFiltered(initial);
     return
   }
@@ -15,10 +15,10 @@ useEffect(() => {
 
   return (
     <div className='collection-filters'>
-          <button className={type == "" ? "active" : ""} onClick={() => setType("")}>All</button>
-          <button className={type == "art" ? "active" : ""} onClick={() => setType("art")}>Art</button>
-          <button className={type == "photography" ? "active" : ""} onClick={() => setType("photography")}>Photography</button>
-          <button className={type == "pattern" ? "active" : ""} onClick={() => setType("pattern")}>Pattern</button>
+          <button className={type === "" ? "active" : ""} onClick={() => setType("")}>All</button>
+          <button className={type === "art" ? "active" : ""} onClick={() => setType("art")}>Art</button>
+          <button className={type === "photography" ? "active" : ""} onClick={() => setType("photography")}>Photography</button>
+          <button className={type === "pattern" ? "active" : ""} onClick={() => setType("pattern")}>Pattern</button>
     </div>
   )
 }
