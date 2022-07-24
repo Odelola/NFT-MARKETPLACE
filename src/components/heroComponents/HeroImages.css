@@ -3,20 +3,18 @@
     grid-template-rows: 1fr auto;
     margin-bottom: 10px;
 }
-.hero-image img {
-    grid-row: 1 / -1;
-    grid-column: 1;
-}
 .hero-image:last-child{
-    place-items: center;
+    /* place-items: center; */
 }
 /* MEDIA QUERIES STARTS */
 @media screen  and (min-width: 320px) and (max-width: 480px){
     .hero-image{
-        width: 80px;
+        width: content;
+        grid-template-rows: auto;
+        margin-bottom: 10px;
     }
     .hero-image img{
-        
+        width: 100%;
     }
 }
 /* MEDIA QUERIES ENDS */

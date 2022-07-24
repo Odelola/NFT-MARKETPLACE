@@ -1,10 +1,10 @@
 import React from 'react'
 import './NavLists.css'
 
-const NavLists = ({link}) => {
+const NavLists = ({linkName, linkPath}) => {
   return (
     <>
-      <a href="#0" className="nav-link">{link}</a>
+      <a href={`#${linkPath}`} className="nav-link">{linkName}</a>
     </>
   )
 }

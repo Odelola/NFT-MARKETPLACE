@@ -138,9 +138,7 @@ const Collection = () => {
                   <AnimatePresence>
                       {filtered.map((filteredItems) => {
                         const {id, src, alt, user, name, bidStatus, price, buttonText, defaultTheme}= filteredItems;
-                        return (
-                              <Card key={id} src={src} alt={alt} user={user} name={name} bidStatus={bidStatus} price={price} buttonText={buttonText} defaultTheme={defaultTheme}/>
-                            )
+                        return <Card key={id} src={src} alt={alt} user={user} name={name} bidStatus={bidStatus} price={price} buttonText={buttonText} defaultTheme={defaultTheme}/>
                       })}
                         </AnimatePresence>
                 </motion.div>
