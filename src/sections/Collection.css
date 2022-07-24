@@ -4,12 +4,10 @@
 }
 #collection .collection-inner .collection-cards .collection-cards_column{
     display: flex;
-    /* justify-content: space-between; */
-    flex-wrap: wrap;
     gap: 40px;
 }
 #collection .collection-inner .collection-cards .collection-cards_column > *{
-    /* flex-basis: 25%; */
+    flex-basis: 31%;
 }
 /* MEDIA QUERIES STARTS */
 @media screen  and (min-width: 320px) and (max-width: 480px){

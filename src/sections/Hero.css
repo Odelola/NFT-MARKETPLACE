@@ -1,5 +1,6 @@
 #hero{
     margin-top: 60px;
+    min-height: 80vh;
 }
 #hero .hero-inner{
     width: 100%;
@@ -10,16 +11,15 @@
     flex-basis: 40%;
 }
 #hero .hero-inner .hero-images{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: minmax(130, 250); */
-    grid-auto-flow: dense;
-    grid-gap: 15px;
+    column-count: 3;
+    column-gap: 10px;
 }
 /* MEDIA QUERIES STARTS */
 @media screen  and (min-width: 320px) and (max-width: 480px){
     #hero .hero-inner{
         flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
     }
 }
 /* MEDIA QUERIES ENDS */

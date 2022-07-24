@@ -22,3 +22,15 @@
 .collection-filters button.active{
     background: var(--primary-gradient);
 }
+/* MEDIA QUERIES STARTS */
+@media screen  and (min-width: 320px) and (max-width: 480px){
+    .collection-filters{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .collection-filters > *{
+        flex-basis: 45%;
+    }
+}
+/* MEDIA QUERIES ENDS */

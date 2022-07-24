@@ -136,9 +136,10 @@ const Collection = () => {
             <div className="collection-cards">
                 <motion.div layout className="collection-cards_column">
                   <AnimatePresence>
-                      {filtered.map(({id, src, alt, user, name, bidStatus, price, buttonText, defaultTheme}) => {
+                      {filtered.map((filteredItems) => {
+                        const {id, src, alt, user, name, bidStatus, price, buttonText, defaultTheme}= filteredItems;
                         return (
-                                <Card key={id} src={src} alt={alt} user={user} name={name} bidStatus={bidStatus} price={price} buttonText={buttonText} defaultTheme={defaultTheme}/>
+                              <Card key={id} src={src} alt={alt} user={user} name={name} bidStatus={bidStatus} price={price} buttonText={buttonText} defaultTheme={defaultTheme}/>
                             )
                       })}
                         </AnimatePresence>
@@ -148,5 +149,12 @@ const Collection = () => {
     </section>
     )
 }
-
+{/* <Card key={id} src={src} alt={alt} user={user} name={name} bidStatus={bidStatus} price={price} buttonText={buttonText} defaultTheme={defaultTheme}/> */}
 export default Collection
+
+
+{/* <>
+                                {(id % 3 == 0 || id == 1) ? (<div>
+                                  <Card key={id} src={src} alt={alt} user={user} name={name} bidStatus={bidStatus} price={price} buttonText={buttonText} defaultTheme={defaultTheme}/>
+                                </div>) : null}
+                          </> */}
