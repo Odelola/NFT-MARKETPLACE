@@ -32,7 +32,7 @@ const HeroDescription = () => {
       </div>
       <div className="hero-credits">
         {heroDescriptionData.map((heroDescriptionDataItem) => (
-          <div className="hero-credits_column">
+          <div className="hero-credits_column" key={heroDescriptionDataItem.id}>
             <h3>{heroDescriptionDataItem.amount}</h3>
             <span>{heroDescriptionDataItem.title}</span>
           </div>

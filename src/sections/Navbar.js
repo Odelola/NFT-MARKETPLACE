@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { gsap } from "gsap";
 import MenuToggler from "../components/navbarComponents/MenuToggler"
 import NavLists from "../components/navbarComponents/NavLists"
 import NavSearch from "../components/navbarComponents/NavSearch"
@@ -8,27 +7,19 @@ import searchIcon from "../images/navbarImages/searchIcon.svg"
 import './Navbar.css'
 
 const Navbar = () => {
-  const [isActive, setIsActive] = useState(false)
+  const [isactive, setIsactive] = useState(false)
   const toggleActive = () => {
-    setIsActive(!isActive);
-    if(!isActive){
+    setIsactive(!isactive);
+    if(!isactive){
       var xPos = window.scrollX;
           var yPos = window.scrollY;
           window.onscroll = () => {
             window.scroll(xPos, yPos);
           };
-          // console.log("mallam")
-          // var timeline = gsap.timeline({ paused: true })
-          // timeline.to(".nav-links", {clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)", ease: "power3.out", duration: 2}).reverse();
-          // gsap.to(".nav-links", {rotation: 27, x: 100, display: "flex", duration: 1}).reverse();
-        }
+        } 
         else{
           window.onscroll = "";
-          // var timeline = gsap.timeline()
-          // timeline.reverse();
       }
-    }
-    if(!isActive){
     }
   return (
     <nav>
@@ -36,11 +27,12 @@ const Navbar = () => {
             <div className="nav-logo">
               <h2>inertia<span>art</span></h2>
             </div>
-            <MenuToggler className={`menu-toggler ${isActive ? "active": null}`} onClick={toggleActive} isActive={isActive} />
+            <MenuToggler className={`menu-toggler ${isactive ? "active": ""}`} onClick={toggleActive}  />
             <div className="nav-search">
               <NavSearch src={searchIcon} alt="Nav Search Icon" />
             </div>
-            <div className={`nav-links ${isActive ? "active": null}`}>
+            <div className={`nav-links ${isactive ? "active": null}`}>
+              <MenuToggler className={`menu-toggler ${isactive ? "active": ""}`} onClick={toggleActive}  />
               <NavLists linkName="Collections" linkPath="collection" />
               <NavLists linkName="Feature" linkPath="featured"/>
               <NavLists linkName="FAQ" linkPath="0"/>

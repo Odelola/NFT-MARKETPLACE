@@ -23,11 +23,21 @@
     background: var(--primary-gradient);
 }
 /* MEDIA QUERIES STARTS */
-@media screen  and (min-width: 320px) and (max-width: 480px){
+@media screen and (max-width: 320px){
     .collection-filters{
-        flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
+        flex-wrap: wrap;
+    }
+    .collection-filters > *{
+        flex-basis: 45%;
+    }
+}
+@media screen and (max-width: 567px){
+    .collection-filters{
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
     }
     .collection-filters > *{
         flex-basis: 45%;

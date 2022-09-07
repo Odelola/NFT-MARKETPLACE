@@ -34,8 +34,8 @@ const Footer = () => {
             <h3 className='footer-links_header'>Contact</h3>
             <div className="footer-links">
               <a href="tel:; +012 3456789"  className="footer-link">+012 3456789</a>
-              <a href="mailto:adorableprogrammer@gmail.com" className="footer-link">adorableprogrrammer@gmail.com</a>
-              <a href="#0" className="footer-link">Term & Condition</a>
+              <a href="mailto:adorableprogrammer@gmail.com" className="footer-link">adorableprogrammer@gmail.com</a>
+              <a href="#0" className="footer-link">Terms & Conditions</a>
               <a href="#0" className="footer-link">FAQ</a>
             </div>
           </div>

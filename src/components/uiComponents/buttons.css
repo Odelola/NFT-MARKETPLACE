@@ -41,7 +41,9 @@
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     *//*border-image: 1px solid var(--primary-gradient);
-    */background: var(--primary-gradient);
+    */
+    background: var(--primary-gradient);
+    /* background: transparent; */
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -61,7 +63,9 @@
     right: 1px;
     bottom: 1px;
     left: 1px;
-    background-color: var(--text-faint-white) !important;
+    background: var(--text-faint-white) !important;
+    background: red ;
+
     border-radius: 9px;
     -webkit-border-radius: 9px;
     -moz-border-radius: 9px;

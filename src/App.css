@@ -67,13 +67,18 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 100px;
 }
 /* MEDIA QUERIES STARTS */
-@media screen  and (min-width: 320px) and (max-width: 768px){
+@media screen  and (max-width: 320px){
     .App{
-        padding: 1em;
+        padding: 1em !important;
         position: relative;
     }
     #main section{
         margin-bottom: 55px;
+    }
+}
+@media screen  and (max-width: 567px){
+    .App{
+        padding: 1.3em;
     }
 }
 /* MEDIA QUERIES ENDS */

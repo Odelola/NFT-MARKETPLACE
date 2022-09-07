@@ -10,8 +10,7 @@ useEffect(() => {
 
   const filtered = initial.filter((cardItem) => cardItem.type.includes(type));
   setFiltered(filtered)
-  console.log(type)
-}, [type])
+}, [type, initial, setFiltered])
 
   return (
     <div className='collection-filters'>

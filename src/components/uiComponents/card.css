@@ -93,11 +93,28 @@
 }
 .card-secondary .card-secondary-inner .card-secondary-details .card-secondary-button{
    margin-top: 10px;
+   background: none;
 }
 .card-secondary .card-secondary-inner  .card-secondary-details .card-secondary-button button{
     width: 100%;
 }
 /* MEDIA QUERIES STARTS */
+@media screen and (max-width: 320px){
+    .card .card-inner{
+        margin: 15px auto;
+    }
+    .card .card-inner .card-image img{
+        height: 250px;
+    }
+    .card .card-inner .card-details .card-user h4,
+    .card .card-inner .card-details .card-price h4{
+        font-size: 12px;
+       margin-top: 5px;
+    }
+    .card-secondary .card-secondary-inner .card-secondary-details p{
+        font-size: 14px;
+    }
+}
 @media screen  and (min-width: 500px) and (max-width: 768px){
     .card{
         /* flex-basis: 28%; */

@@ -128,6 +128,7 @@ const Collection = () => {
     const [initial, setInitial] = useState(collectionData)
     const [filtered, setFiltered] = useState(collectionData)
     const [type, setType] = useState("")
+    console.log(setInitial)
     return(
         <section id="collection">
         <div className="collection-inner">
@@ -147,12 +148,4 @@ const Collection = () => {
     </section>
     )
 }
-{/* <Card key={id} src={src} alt={alt} user={user} name={name} bidStatus={bidStatus} price={price} buttonText={buttonText} defaultTheme={defaultTheme}/> */}
 export default Collection
-
-
-{/* <>
-                                {(id % 3 == 0 || id == 1) ? (<div>
-                                  <Card key={id} src={src} alt={alt} user={user} name={name} bidStatus={bidStatus} price={price} buttonText={buttonText} defaultTheme={defaultTheme}/>
-                                </div>) : null}
-                          </> */}

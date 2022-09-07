@@ -55,7 +55,7 @@ const Hero = () => {
             <HeroDescription />
             <div className="hero-images">
               {heroData.map((heroItem) => (
-                <HeroImages key={heroItem.key} src={heroItem.src} alt={heroItem.alt} />
+                <HeroImages key={heroItem.id} src={heroItem.src} alt={heroItem.alt} />
               ))}
             </div>
         </div>

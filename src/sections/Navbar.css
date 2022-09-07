@@ -29,17 +29,18 @@ nav .nav-inner .nav-links{
     column-gap: 30px;
 }
 /* MEDIA QUERIES STARTS */
-@media screen  and (min-width: 320px) and (max-width: 480px){
+@media screen and (max-width: 320px){
     nav .nav-inner{
         padding: 5px 0;
     }
     nav .nav-inner .nav-logo h2{
-        font-size: 30px;
+        font-size: 24px;
     }
     nav .nav-inner .nav-search{
         display: none;
     }
     nav .nav-inner .nav-links{
+        padding: 1em;
         width: 100%;
         height: 100vh;
         background: var(--btn-secondary-color);
@@ -49,21 +50,53 @@ nav .nav-inner .nav-links{
         flex-direction: column;
         justify-content: center;
         row-gap: 25px;
-        z-index: 100;
+        z-index: 300;
         background: var(--linear-background);
-        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
-        display: none;
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
     }
     nav .nav-inner .nav-links.active{
         display: flex;
         clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
     }
-    /* @keyframes fade-up {
-        100%{
-        }
-    } */
+    nav .nav-inner .nav-links .menu-toggler{
+        position: fixed;
+        top: calc(1em + 10px);
+        right: 1.3em;
+    }
     nav .nav-inner .nav-links button{
-        width: 90%;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 567px){
+    nav .nav-inner .nav-logo h2{
+        font-size: 27px;
+    }
+    nav .nav-inner .nav-search{
+        display: none;
+    }
+    nav .nav-inner .nav-links{
+        padding: 1em;
+        width: 100%;
+        height: 100vh;
+        background: var(--btn-secondary-color);
+        position: fixed;
+        left: 0%;
+        top: 0%;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 25px;
+        z-index: 300;
+        background: var(--linear-background);
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    }
+    nav .nav-inner .nav-links.active{
+        display: flex;
+        clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    }
+    nav .nav-inner .nav-links .menu-toggler{
+        position: fixed;
+        top: calc(1em + 10px);
+        right: 1em;
     }
 }
 /* MEDIA QUERIES ENDS */

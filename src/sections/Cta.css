@@ -16,10 +16,23 @@
     line-height: 45px;
 }
 /* MEDIA QUERIES STARTS */
-@media screen  and (min-width: 320px) and (max-width: 480px){
+@media screen and (max-width: 320px){
+    #cta .cta-inner{
+        padding: 15px 0 !important;
+    }
     #cta .cta-inner .cta-details h2{
-        font-size: 25px;
-        line-height: 35px;
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+}
+@media screen and (max-width: 567px){
+    #cta .cta-inner{
+        padding: 20px 0;
+    }
+    #cta .cta-inner .cta-details h2{
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 5px;
     }
 }
 /* MEDIA QUERIES ENDS */

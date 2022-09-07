@@ -9,7 +9,18 @@
     color: var(--text-faint-white);
 }
 /* MEDIA QUERIES STARTS */
-@media screen  and (min-width: 320px) and (max-width: 480px){
+@media screen and (max-width: 320px){
+    .collection-header p{
+        font-size: 14px;
+    }
+    .collection-header br{
+       display: none;
+   }
+}
+@media screen and (max-width: 567px){
+    .collection-header p{
+        font-size: 16px;
+    }
     .collection-header br{
        display: none;
    }

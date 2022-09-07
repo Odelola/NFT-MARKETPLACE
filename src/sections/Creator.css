@@ -3,16 +3,16 @@
     justify-content: space-between;
 }
 /* MEDIA QUERIES STARTS */
-@media screen  and (min-width: 320px) and (max-width: 480px){
+@media screen and (max-width: 320px){
     #creator .creator-inner .creator-cards .creator-cards_column{
         flex-direction: column;
         row-gap: 20px;
     }
 }
-@media screen  and (min-width: 500px) and (max-width: 768px){
+@media screen and (max-width: 567px){
     #creator .creator-inner .creator-cards .creator-cards_column{
         flex-direction: column;
-        row-gap: 20px;
+        row-gap: 25px;
     }
 }
 /* MEDIA QUERIES ENDS */

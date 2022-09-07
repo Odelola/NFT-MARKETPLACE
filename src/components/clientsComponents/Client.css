@@ -1,7 +1,12 @@
 /* MEDIA QUERIES STARTS */
-@media screen  and (min-width: 320px) and (max-width: 480px){
+@media screen and (max-width: 320px){
     img{
         width: 40%;
+    }
+}
+@media screen and (max-width: 567px){
+    img{
+        width: 45%;
     }
 }
 /* MEDIA QUERIES ENDS */

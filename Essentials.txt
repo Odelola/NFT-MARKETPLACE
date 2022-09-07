@@ -1,5 +1,5 @@
 /* MEDIA QUERIES STARTS */
-@media screen  and (min-width: 320px) and (max-width: 480px){
+@media screen and (max-width: 320px){
      .featured-header br{
         display: none;
     }
