@@ -1,48 +1,46 @@
-@media screen and (max-width: 320px){
-    .menu-toggler{
-        display: block;
-        width: 26px;
-        height: 26px;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        cursor: pointer;
-        z-index: 200;
-    }
-    .menu-toggler span{
-        display: block;
-        width: 25px;
-        height: 3px;
-        background: var(--primary-gradient);
-        margin-bottom: 3px;
-        transition: .1s ease-in;
-        -webkit-transition: .1s ease-in;
-        -moz-transition: .1s ease-in;
-        -ms-transition: .1s ease-in;
-        -o-transition: .1s ease-in;
-    }
-    .menu-toggler.active span{
-        margin-bottom: 0 !important;
-        background: var(--text-white); 
-    }
-    .menu-toggler.active span:first-child{
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-    }
-    .menu-toggler.active span:last-child{
-        margin-top: -3px;
-        transform: rotate(135deg);
-        -webkit-transform: rotate(135deg);
-        -moz-transform: rotate(135deg);
-        -ms-transform: rotate(135deg);
-        -o-transform: rotate(135deg);
+.menu-toggler{
+    display: block;
+    width: 26px;
+    height: 26px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 200;
 }
-    .menu-toggler.active span:nth-child(2){
-        display: none;
-    }
+.menu-toggler span{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--primary-gradient);
+    margin-bottom: 3px;
+    transition: .1s ease-in;
+    -webkit-transition: .1s ease-in;
+    -moz-transition: .1s ease-in;
+    -ms-transition: .1s ease-in;
+    -o-transition: .1s ease-in;
+}
+.menu-toggler.active span{
+    margin-bottom: 0 !important;
+    background: var(--text-white); 
+}
+.menu-toggler.active span:first-child{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.menu-toggler.active span:last-child{
+    margin-top: -3px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+}
+.menu-toggler.active span:nth-child(2){
+    display: none;
 }

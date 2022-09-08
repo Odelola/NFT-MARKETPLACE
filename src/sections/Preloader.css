@@ -1,0 +1,80 @@
+#preloader{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: var(--linear-background);
+    z-index: 1000;
+    animation: fade-left 2s 2s ease-in;
+    -webkit-animation: fade-left 2s 2s ease-in;
+}
+@keyframes fade-left {
+    to{
+        transform: translateX(-900%);
+        -webkit-transform: translateX(-900%);
+        -moz-transform: translateX(-900%);
+        -ms-transform: translateX(-900%);
+        -o-transform: translateX(-900%);
+}
+}
+.preloader-inner{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.preloader-inner .preloader-credits h2{
+    font-size: 25px;
+    margin-bottom: 30px;
+    animation: fade-up .5s ease-in-out;
+    -webkit-animation: fade-up .5s ease-in-out;
+}
+.preloader-inner svg{
+    animation: fade-right .5s ease-in-out;
+    -webkit-animation: fade-right .5s ease-in-out;
+}
+@keyframes fade-up {
+    from{
+        opacity: o;
+        transform: translate3d(0, 100%, 0);
+        -webkit-transform: translate3d(0, 100%, 0);
+        -moz-transform: translate3d(0, 100%, 0);
+        -ms-transform: translate3d(0, 100%, 0);
+        -o-transform: translate3d(0, 100%, 0);
+}
+    to{
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        -webkit-transform: none;
+}
+}
+@keyframes fade-right{
+    from{
+        opacity: o;
+        user-select:none;
+        visibility: hidden;
+        transform: translate3d(-100%, 0, 0);
+        -webkit-transform: translate3d(-100%, 0, 0);
+        -moz-transform: translate3d(-100%, 0, 0);
+        -ms-transform: translate3d(-100%, 0, 0);
+        -o-transform: translate3d(-100%, 0, 0);
+}
+    to{
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        -webkit-transform: none;
+}
+}
+#preloader.active{
+    display: none;
+}

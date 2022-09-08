@@ -35,7 +35,6 @@ const Navbar = () => {
               <MenuToggler className={`menu-toggler ${isactive ? "active": ""}`} onClick={toggleActive}  />
               <NavLists linkName="Collections" linkPath="collection" />
               <NavLists linkName="Feature" linkPath="featured"/>
-              <NavLists linkName="FAQ" linkPath="0"/>
               <PrimaryButton title="Select Wallet" />
             </div>
         </div>

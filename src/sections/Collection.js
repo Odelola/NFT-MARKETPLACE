@@ -128,7 +128,6 @@ const Collection = () => {
     const [initial, setInitial] = useState(collectionData)
     const [filtered, setFiltered] = useState(collectionData)
     const [type, setType] = useState("")
-    console.log(setInitial)
     return(
         <section id="collection">
         <div className="collection-inner">

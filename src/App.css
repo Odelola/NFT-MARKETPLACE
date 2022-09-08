@@ -76,9 +76,14 @@ body::-webkit-scrollbar-thumb {
         margin-bottom: 55px;
     }
 }
-@media screen  and (max-width: 567px){
+@media screen  and (max-width: 967px){
     .App{
         padding: 1.3em;
+    }
+}
+@media screen  and (min-width: 968px){
+    .App{
+        padding: 1.7em;
     }
 }
 /* MEDIA QUERIES ENDS */

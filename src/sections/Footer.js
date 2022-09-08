@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-credits">
-          <p>Created by <a href="https://odelolaoluwaseyi.com" rel="noopener noreferrer" target="_blank" className="footer-author"> Oluwaseyi Odelola</a><span> | </span>Design by Zarror <span> | </span>All Right Reserved</p>
+          <p>Created by <a href="https://odelolaoluwaseyi.com" rel="noopener noreferrer" target="_blank" className="footer-author"> Oluwaseyi Odelola</a><span> | </span>Design by <a href="https://dribbble.com/zet_dev" rel="noopener noreferrer" target="_blank" className="footer-author">Zarror</a><span> | </span>All Right Reserved</p>
         </div>
       </div>
     </footer>
